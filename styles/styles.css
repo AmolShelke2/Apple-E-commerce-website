@@ -96,8 +96,7 @@ html {
   background-color: #fee;
   position: absolute;
   transform-style: preserve-3d;
-  box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd,
-    inset -0.1rem -0.1rem -0.1rem #ddd;
+  box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd, inset -0.1rem -0.1rem 0.1rem #ddd;
 }
 
 .front-side {
@@ -112,8 +111,7 @@ html {
   height: 10rem;
   background-color: #fee;
   position: absolute;
-  box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd,
-    inset -0.1rem -0.1rem -0.1rem #ddd;
+  box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd, inset -0.1rem -0.1rem 0.1rem #ddd;
 }
 
 .front-side::before {
@@ -133,7 +131,7 @@ html {
 .front-side img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .back-side {
@@ -153,8 +151,7 @@ html {
   font-size: 2rem;
   font-weight: 300;
   color: #ec1919;
-  box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd,
-    inset -0.1rem -0.1rem -0.1rem #ddd;
+  box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd, inset -0.1rem -0.1rem 0.1rem #ddd;
 }
 
 .back-side::before {
@@ -173,9 +170,9 @@ html {
 
 .back-side i {
   font-size: 12rem;
-  color: var(--primiary-color);
+  color: var(--primary-color);
   text-shadow: 0.1rem 0.1rem 0.2rem #aaa, -0.1rem -0.1rem 0.2rem #aaa;
-  transform: rotateY(100deg);
+  transform: rotateY(180deg);
 }
 
 /* Controls */
@@ -308,7 +305,6 @@ html {
     30% 0
   );
 }
-
 /* End Of Banner */
 
 /* End of section 1 */
