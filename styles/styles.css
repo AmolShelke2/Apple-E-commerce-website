@@ -206,6 +206,30 @@ html {
   left: 50%;
   transform: translateX(-50%);
 }
+
+.controls a:nth-child(3) {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.controls a:nth-child(4) {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.controls a:nth-child(5) {
+  top: 10%;
+  right: 10%;
+  transform: rotate(45deg);
+}
+
+.controls :nth-child(6) {
+  bottom: 10%;
+  left: 10%;
+  transform: rotate(45deg);
+}
 /* End of Controls */
 
 /* End of cube wrapper */
