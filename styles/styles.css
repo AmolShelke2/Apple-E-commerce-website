@@ -230,8 +230,85 @@ html {
   left: 10%;
   transform: rotate(45deg);
 }
-/* End of Controls */
 
-/* End of cube wrapper */
+.controls i {
+  font-size: 1.5rem;
+  color: var(--primiary-color);
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+
+.controls a:hover i {
+  opacity: 1;
+}
+
+/* End of Controls */
+/* End of cube */
+
+/* Banner */
+.section-1-banner {
+  flex-direction: column;
+}
+
+.section-1-banner h1 {
+  font-size: 13rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.section-1-banner p {
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  margin: 6rem 0 4rem 0;
+}
+
+.section-1-banner span {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+.section-1-banner button {
+  padding: 2rem 4rem;
+  font-size: 2rem;
+  background-color: var(--black-color);
+  color: var(--primiary-color);
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  clip-path: polygon(
+    50% 0%,
+    81% 5%,
+    100% 0,
+    100% 100%,
+    80% 95%,
+    50% 100%,
+    20% 95%,
+    0 100%,
+    0 0,
+    23% 5%
+  );
+  transition: clip-path 0.5s;
+}
+
+.section-1-banner button:hover {
+  clip-path: polygon(
+    40% 15%,
+    77% 15%,
+    100% 10%,
+    100% 90%,
+    75% 85%,
+    40% 85%,
+    30% 100%,
+    0 50%,
+    0 50%,
+    30% 0
+  );
+}
+
+/* End Of Banner */
 
 /* End of section 1 */
