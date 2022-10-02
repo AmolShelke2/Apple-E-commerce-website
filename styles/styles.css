@@ -308,6 +308,29 @@ html {
 /* End Of Banner */
 
 /* Slide Show */
+.slideshow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.slideshow div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 5s;
+}
+
+.slideshow div.change {
+  opacity: 1;
+}
 
 /* End Of Slide Show */
 
