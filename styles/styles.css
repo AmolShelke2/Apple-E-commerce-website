@@ -17,7 +17,7 @@ html {
 }
 
 :root {
-  --primiary-color: #6edae6;
+  --primary-color: #6edae6;
   --white-color: #fff;
   --black-color: #000;
 }
@@ -33,7 +33,7 @@ html {
 .section-1 {
   width: 100%;
   height: 100vh;
-  background-color: var(--primiary-color);
+  background-color: var(--primary-color);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -230,7 +230,7 @@ html {
 
 .controls i {
   font-size: 1.5rem;
-  color: var(--primiary-color);
+  color: var(--primary-color);
   opacity: 0.5;
   transition: opacity 0.5s;
 }
@@ -270,7 +270,7 @@ html {
   padding: 2rem 4rem;
   font-size: 2rem;
   background-color: var(--black-color);
-  color: var(--primiary-color);
+  color: var(--primary-color);
   font-weight: 400;
   letter-spacing: 0.1rem;
   border: none;
@@ -335,5 +335,111 @@ html {
 /* End of section 1 */
 
 /* Section 2 */
+.section-2 {
+  width: 100%;
+  height: 120vh;
+  padding: 10vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 
+/* Section 2 heading */
+.section-2-heading {
+  font-size: 10rem;
+  font-weight: 200;
+  color: var(--black-color);
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.section-2-heading::before {
+  content: "";
+  width: 130%;
+  height: 30vw;
+  background-image: linear-gradient(var(--primary-color), var(--white-color));
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skewX(-50deg);
+  transform-origin: left top;
+  z-index: -1;
+  border-radius: 1rem;
+}
+/* End of section 2 heading */
+
+/* Section 2 Images */
+.iphones {
+  height: 60vh;
+  width: 50vw;
+  background-image: linear-gradient(var(--primary-color), var(--white-color));
+  border-radius: 0.5rem;
+}
+
+.iphones img {
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
+  position: absolute;
+  transition: opacity 3s;
+}
+
+.iphone-img-2 {
+  opacity: 0;
+}
+
+.iphones:hover .iphone-img-1 {
+  opacity: 0;
+}
+
+.iphones:hover .iphone-img-2 {
+  opacity: 1;
+}
+/* End of Section 2 Images */
+
+/* Iphone btns */
+.iphone-btns {
+  display: flex;
+}
+
+.iphone-btn {
+  width: 6rem;
+  height: 6rem;
+  background-image: linear-gradient(
+    to right,
+    rgb(51, 51, 51) 60%,
+    rgb(82, 82, 82)
+  );
+  margin: 0 3rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+.iphone-btn::after {
+  content: "";
+  width: 50%;
+  height: 50%;
+  display: block;
+  border: 0.1rem solid #6edae6;
+  border-radius: 1rem;
+}
+
+.iphone-btn span {
+  position: absolute;
+  top: -3rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--primary-color);
+  width: max-content;
+  transform: scale(0);
+  transition: transform 0.5s;
+}
+
+.iphone-btn:hover span {
+  transform: scale(1);
+}
+/* End of iphone btns */
 /* End of Section 2 */
