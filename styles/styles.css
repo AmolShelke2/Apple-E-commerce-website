@@ -454,16 +454,16 @@ html {
   clip-path: polygon(68% 0, 100% 0, 100% 97%, 38% 100%, 0 100%, 0 3%);
 }
 
-/* Section 3 Heading  */
+/* Section 3 Heading */
 .section-3-heading {
   font-size: 10rem;
   font-weight: 200;
   color: var(--primary-color);
   margin-bottom: 15rem;
 }
-/* End of section 3 heading */
+/* End of Section 3 Heading */
 
-/* section 3 content */
+/* Section 3 Content */
 .section-3-content {
   width: 80%;
   flex-direction: column;
@@ -471,7 +471,7 @@ html {
   position: relative;
 }
 
-/* section 3 images */
+/* Section 3 Images */
 .section-3-content img {
   width: inherit;
 }
@@ -485,10 +485,9 @@ html {
   transform: rotateX(0);
   transition: transform 3s;
 }
-/* End of section 3 images */
+/* End of Section 3 Images */
 
-/* Section 3 Loading  */
-
+/* Section 3 Loading */
 .loading-wrapper {
   position: absolute;
   top: 6%;
@@ -498,7 +497,7 @@ html {
       rgba(255, 255, 255, 0.6),
       rgba(255, 255, 255, 0.6)
     ),
-    url(images/Macbook/macbook-1-desktop.png) center no-repeat;
+    url(images/MacBook/macbook-1-desktop.png) center no-repeat;
   z-index: -1;
   opacity: 0;
 }
@@ -518,12 +517,12 @@ html {
   flex-direction: column;
 }
 
-.change .laoding {
+.change .loading {
   opacity: 0;
   transition: 1s 5s;
 }
 
-.laoding i {
+.loading i {
   font-size: 10rem;
   color: var(--white-color);
   margin-bottom: 2rem;
@@ -551,7 +550,7 @@ html {
   width: 100%;
   transition: width 1s 3s;
 }
-/* End of section 3 loading */
+/* End of Section 3 Loading */
 
 /* Section 3 Info */
 .macbook-info {
