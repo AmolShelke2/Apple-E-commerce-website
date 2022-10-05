@@ -116,3 +116,7 @@ window.addEventListener("scroll", () => {
     section3Content.classList.add("change");
   }
 });
+
+// Section 4
+
+// End of Section 4
