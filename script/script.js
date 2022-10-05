@@ -127,4 +127,8 @@ const watchRightControl = document.querySelector(".watch-right-control");
 const watchBottomControl = documentu.querySelector(".watch-bottom-control");
 const watchLeftControl = document.querySelector(".watch-left-control");
 
+let axisY = 0;
+let axisX = 0;
+
+const hideControl = () => {};
 // End of Section 4
