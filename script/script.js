@@ -124,7 +124,7 @@ const watchCases = document.querySelector(".watch-cases");
 
 const watchTopControl = document.querySelector(".watch-top-control");
 const watchRightControl = document.querySelector(".watch-right-control");
-const watchBottomControl = documentu.querySelector(".watch-bottom-control");
+const watchBottomControl = document.querySelector(".watch-bottom-control");
 const watchLeftControl = document.querySelector(".watch-left-control");
 
 let axisY = 0;
@@ -143,16 +143,37 @@ const hideControl = () => {
     watchBottomControl.classList.remove("hideControl");
   }
 
-  if (axisX === -280) {
+  if (axisX === 280) {
     watchRightControl.classList.add("hideControl");
   } else {
     watchRightControl.classList.remove("hideControl");
   }
 
-  if (axisX === 280) {
+  if (axisX === -280) {
     watchLeftControl.classList.add("hideControl");
   } else {
     watchLeftControl.classList.remove("hideControl");
   }
 };
+
+// Event Handlers
+watchTopControl.addEventListener("click", () => {
+  watchCases.style.marginTop = `${(axisY -= 70)}rem`;
+  hideControl();
+});
+
+watchBottomControl.addEventListener("click", () => {
+  watchCases.style.marginTop = `${(axisY += 70)}rem`;
+  hideControl();
+});
+
+watchRightControl.addEventListener("click", () => {
+  watchBands.style.marginRight = `${(axisX += 70)}rem`;
+  hideControl();
+});
+
+watchLeftControl.addEventListener("click", () => {
+  watchBands.style.marginRight = `${(axisX -= 70)}rem`;
+  hideControl();
+});
 // End of Section 4
