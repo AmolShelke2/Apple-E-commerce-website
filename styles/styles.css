@@ -724,3 +724,13 @@ html {
   letter-spacing: 0.1rem;
 }
 /* End of section 5 */
+
+/* Responsive */
+
+@media (max-width: 1500px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+/* End of Responsive */
