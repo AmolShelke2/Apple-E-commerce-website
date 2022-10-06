@@ -444,7 +444,7 @@ html {
 /* End of iphone btns */
 /* End of Section 2 */
 
-/* section 3 */
+/* Section 3 */
 .section-3 {
   width: 100%;
   height: 100%;
@@ -590,9 +590,9 @@ html {
   color: var(--primary-color);
   cursor: pointer;
 }
-/* End of Section 3 info */
-/* end of section 3 content */
-/* End of section 3 */
+/* End of Section 3 Info */
+/* End of Section 3 Content */
+/*End of Section 3 */
 
 /* section 4 */
 .section-4 {
@@ -733,4 +733,179 @@ html {
   }
 }
 
+@media (max-width: 1100px) {
+  html {
+    font-size: 40%;
+  }
+
+  .navbar-link {
+    font-weight: 700;
+  }
+
+  .section-1-banner h1 {
+    font-size: 8rem;
+  }
+
+  .section-1-banner p {
+    font-size: 3rem;
+  }
+
+  .watch-btn {
+    right: 25%;
+  }
+}
+
+@media (max-width: 900px) {
+  .section-3-content {
+    width: 90%;
+  }
+
+  .loading-wrapper {
+    width: 70%;
+  }
+
+  .loading i {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .logo {
+    top: 0;
+    left: 2rem;
+  }
+
+  .logo i {
+    font-size: 8rem;
+  }
+
+  .controls {
+    display: none;
+  }
+
+  .cube-wrapper {
+    opacity: 0.7;
+  }
+
+  .cube {
+    top: 3rem;
+  }
+
+  .section-1-banner {
+    position: absolute;
+  }
+
+  .section-1-banner h1 {
+    position: relative;
+    left: -5rem;
+  }
+
+  .section-1-banner h1::first-letter {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .section-1-banner button:hover {
+    clip-path: polygon(
+      50% 0%,
+      81% 5%,
+      100% 0,
+      100% 100%,
+      80% 95%,
+      50% 100%,
+      20% 95%,
+      0 100%,
+      0 0,
+      23% 5%
+    );
+  }
+
+  .iphones {
+    height: 70vh;
+    width: 70vw;
+  }
+
+  .watch-btn {
+    right: 15%;
+  }
+
+  .icons-link {
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .navbar-link {
+    margin: 0 1.5rem;
+  }
+
+  .section-2-heading {
+    font-size: 8rem;
+  }
+
+  .section-3-heading {
+    font-size: 8rem;
+  }
+
+  .macbook-info-heading {
+    font-size: 5rem;
+  }
+
+  .macbook-btn {
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.3rem;
+  }
+
+  .icons-link img {
+    width: 8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 35%;
+  }
+
+  .logo {
+    top: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar {
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+  }
+
+  .section-1-banner p {
+    text-align: center;
+  }
+
+  .iphones {
+    width: 75vw;
+  }
+
+  .section-3-heading {
+    font-size: 6rem;
+  }
+
+  .macbook-info {
+    width: 40rem;
+  }
+
+  .macbook-info-heading {
+    font-size: 3rem;
+  }
+
+  .macbook-price {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .icons-link img {
+    width: 6rem;
+  }
+}
 /* End of Responsive */

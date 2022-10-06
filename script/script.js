@@ -116,7 +116,6 @@ window.addEventListener("scroll", () => {
     section3Content.classList.add("change");
   }
 });
-
 // Section 4
 
 const watchBands = document.querySelector(".watch-bands");
