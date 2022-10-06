@@ -703,5 +703,24 @@ html {
 /* End of section 4 */
 
 /* Section 5 */
+.section-5 {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+}
 
+.icons-link {
+  margin: 0 5rem;
+}
+
+.icons-link img {
+  width: 10rem;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 5rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
 /* End of section 5 */
